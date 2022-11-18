@@ -3,13 +3,12 @@ import { device, size } from "../../lib/breakpoints";
 import { colors } from "../../lib/themeColors";
 
 export const HeaderContainer = styled.div`
-  background-color: ${colors.blue};
-  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media ${device.mobileL} {
+  height: 384px;
+  @media ${device.tablet} {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,13 +19,13 @@ export const HeaderContainer = styled.div`
 export const LogoImageSmall = styled.img`
   width: 200px;
   margin-top: 55px;
-  @media (min-width: ${size.mobileL}) {
+  @media (min-width: ${size.tablet}) {
     display: none;
   }
 `;
 
 export const LogoImageBigger = styled.img`
-  @media (max-width: ${size.mobileL}) {
+  @media (max-width: ${size.tablet}) {
     display: none;
   }
 `;
@@ -34,7 +33,7 @@ export const LogoImageBigger = styled.img`
 export const ParticipanteImage = styled.img`
   height: 150px;
   z-index: 1;
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     height: 250px;
     margin-top: 121px;
     align-self: flex-end;
